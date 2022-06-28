@@ -11,14 +11,24 @@
 		0D048D4E28679BAB00C1E7B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D048D4D28679BAB00C1E7B5 /* ContentView.swift */; };
 		0D048D5028679BAC00C1E7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D048D4F28679BAC00C1E7B5 /* Assets.xcassets */; };
 		0D048D5328679BAC00C1E7B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D048D5228679BAC00C1E7B5 /* Preview Assets.xcassets */; };
+		0D5D71A528679CEA00C69933 /* PlacesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D71A428679CEA00C69933 /* PlacesService.swift */; };
+		0DA5B716286B939600B19967 /* PlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5B715286B939600B19967 /* PlacesViewModel.swift */; };
+		8880A6BE4087B24CE38B47B6 /* Pods_sunseeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7A8DBD073B2DD54E2B8C53 /* Pods_sunseeker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0141E98B42D7009A8FB04DC0 /* Pods-sunseeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sunseeker.debug.xcconfig"; path = "Target Support Files/Pods-sunseeker/Pods-sunseeker.debug.xcconfig"; sourceTree = "<group>"; };
 		0D048D4828679BAB00C1E7B5 /* sunseeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sunseeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D048D4B28679BAB00C1E7B5 /* sunseekerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sunseekerApp.swift; sourceTree = "<group>"; };
 		0D048D4D28679BAB00C1E7B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D048D4F28679BAC00C1E7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D048D5228679BAC00C1E7B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0D5D71A428679CEA00C69933 /* PlacesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesService.swift; sourceTree = "<group>"; };
+		0DA5B715286B939600B19967 /* PlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewModel.swift; sourceTree = "<group>"; };
+		0DA5B717286B94F400B19967 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		0DA5B718286B954700B19967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B7A8DBD073B2DD54E2B8C53 /* Pods_sunseeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sunseeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF0CDD1BF6F31C4E2BE4B9B /* Pods-sunseeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sunseeker.release.xcconfig"; path = "Target Support Files/Pods-sunseeker/Pods-sunseeker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8880A6BE4087B24CE38B47B6 /* Pods_sunseeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +46,11 @@
 		0D048D3F28679BAB00C1E7B5 = {
 			isa = PBXGroup;
 			children = (
+				0DA5B717286B94F400B19967 /* Secrets.xcconfig */,
 				0D048D4A28679BAB00C1E7B5 /* sunseeker */,
 				0D048D4928679BAB00C1E7B5 /* Products */,
+				76DCA7241AB69C79B22D849C /* Pods */,
+				56B07A3A1C3E2FEEF9793D83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +65,13 @@
 		0D048D4A28679BAB00C1E7B5 /* sunseeker */ = {
 			isa = PBXGroup;
 			children = (
+				0DA5B718286B954700B19967 /* Info.plist */,
 				0D048D4B28679BAB00C1E7B5 /* sunseekerApp.swift */,
 				0D048D4D28679BAB00C1E7B5 /* ContentView.swift */,
 				0D048D4F28679BAC00C1E7B5 /* Assets.xcassets */,
 				0D048D5128679BAC00C1E7B5 /* Preview Content */,
+				0D5D71A428679CEA00C69933 /* PlacesService.swift */,
+				0DA5B715286B939600B19967 /* PlacesViewModel.swift */,
 			);
 			path = sunseeker;
 			sourceTree = "<group>";
@@ -67,6 +84,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		56B07A3A1C3E2FEEF9793D83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B7A8DBD073B2DD54E2B8C53 /* Pods_sunseeker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76DCA7241AB69C79B22D849C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0141E98B42D7009A8FB04DC0 /* Pods-sunseeker.debug.xcconfig */,
+				EDF0CDD1BF6F31C4E2BE4B9B /* Pods-sunseeker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D048D5628679BAC00C1E7B5 /* Build configuration list for PBXNativeTarget "sunseeker" */;
 			buildPhases = (
+				81D7A2EC2C09339896E671C6 /* [CP] Check Pods Manifest.lock */,
 				0D048D4428679BAB00C1E7B5 /* Sources */,
 				0D048D4528679BAB00C1E7B5 /* Frameworks */,
 				0D048D4628679BAB00C1E7B5 /* Resources */,
+				F560FD0D2DAD6A0548D52B6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +168,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81D7A2EC2C09339896E671C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sunseeker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F560FD0D2DAD6A0548D52B6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sunseeker/Pods-sunseeker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sunseeker/Pods-sunseeker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sunseeker/Pods-sunseeker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D048D4428679BAB00C1E7B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA5B716286B939600B19967 /* PlacesViewModel.swift in Sources */,
+				0D5D71A528679CEA00C69933 /* PlacesService.swift in Sources */,
 				0D048D4E28679BAB00C1E7B5 /* ContentView.swift in Sources */,
 				0D048D4C28679BAB00C1E7B5 /* sunseekerApp.swift in Sources */,
 			);
@@ -147,6 +227,7 @@
 /* Begin XCBuildConfiguration section */
 		0D048D5428679BAC00C1E7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA5B717286B94F400B19967 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -207,6 +288,7 @@
 		};
 		0D048D5528679BAC00C1E7B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA5B717286B94F400B19967 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -261,6 +343,7 @@
 		};
 		0D048D5728679BAC00C1E7B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0141E98B42D7009A8FB04DC0 /* Pods-sunseeker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +353,8 @@
 				DEVELOPMENT_TEAM = N9DA3D479M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sunseeker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needed to get bars near you!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +375,7 @@
 		};
 		0D048D5828679BAC00C1E7B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF0CDD1BF6F31C4E2BE4B9B /* Pods-sunseeker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +385,8 @@
 				DEVELOPMENT_TEAM = N9DA3D479M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = sunseeker/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Needed to get bars near you!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
