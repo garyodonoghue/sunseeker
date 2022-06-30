@@ -26,7 +26,7 @@ class PlacesService {
                 myGroup.enter()
                 self.placesClient.lookUpPlaceID(bar.placeID!) { successResponse, error in
                     guard let response = successResponse else { return }
-                    let place = Place(placeID: bar.placeID!, name: bar.name!, location: response.coordinate)
+                    let place = Place(placeID: bar.placeID!, name: bar.name!, location: response.coordinate, address: response.formattedAddress ?? "")
                     
                     places.append(place)
                     myGroup.leave()
@@ -64,4 +64,5 @@ struct Place: Identifiable {
     let placeID: String
     let name: String
     let location: CLLocationCoordinate2D
+    let address: String
 }
